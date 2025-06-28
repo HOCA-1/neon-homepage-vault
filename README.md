@@ -1,3 +1,22 @@
+# 🌌 Neon Homepage – Glow-Infused Obsidian Dashboard
+
+> This is the Obsidian homepage setup I shared on [Reddit](https://www.reddit.com/r/ObsidianMD/comments/1lk7pt5/obsidian_was_supposed_to_help_me_take_notes_now/) — built with glowing templates, modular snippets, and a playful design mindset.
+
+---
+
+Welcome to **Neon Homepage**, a personalized Obsidian vault crafted to be both beautiful and functional.  
+It features:
+
+- 💡 Glow-themed dashboard layout
+- 📅 Clickable template cards (Daily, Meeting, Mind Dump...)
+- 🎛️ Modular CSS snippets for searchbars, sliders, tags, and more
+- ⚙️ Automation-ready with Templater & Buttons plugin
+
+> This vault started as a late-night experiment and turned into a glowy mess of joy ✨
+
+---
+
+
 ## 🧭 Inspirations & Credits
 
 This setup was crafted by remixing and building upon existing community wisdom. Huge thanks to the following creators and sources:
