@@ -112,6 +112,14 @@ Each snippet connects to a specific feature on the homepage. Below is a breakdow
 
 Used to create the floating search input bar at the top of the homepage.
 
+#### ✅ Requirements:
+To display the searchbar, you need to install and enable the community plugin:  
+👉 [`Home Tab`](https://github.com/olrenso/obsidian-home-tab) by **Renso**
+
+Then, enable the CSS snippet:  
+👉 `Dashboard Searchbar.css` from `Settings → Appearance → CSS Snippets`
+
+#### 🧩 HTML Usage:
 
 To add a functional search bar (via Home Tab plugin), insert this code block in your note:
 
@@ -126,7 +134,7 @@ For a visual neon-style search bar, make sure the Dashboard Searchbar.css snippe
 
 <img src="https://github.com/user-attachments/assets/ef6f27c6-1bb3-4f6f-9011-3e1a66e4653e" width="400"/>
 
-### 🕒 `Dashboard Clock.css`
+### `Dashboard Clock.css`
 
 Styles the **clock widget** placed in the top section of your homepage.  
 It adds a glowing digital time display that fits perfectly with the neon dashboard theme.
@@ -147,10 +155,11 @@ Then, enable the CSS snippet:
 
 Place this in your homepage note to render the live clock:
 
-```html
-<div class="widget">
-  <div data-type="clock" data-format="HH:mm"></div>
-</div>
+````markdown
+```widgets
+type: clock
+```
+````
 
 
 
