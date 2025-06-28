@@ -1,0 +1,93 @@
+/* === DASHBOAR SETTINGS === */
+
+.dashboard {
+    font-family: inherit;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    padding-top: 25px !important;
+}
+
+.dashboard .markdown-preview-section {
+    max-width: 100%;
+    margin-top: -50px; /* Moving dashboard blok to top */
+}
+
+/* TITLE GLOW */
+.dashboard .markdown-preview-section h1 {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 32px;
+  text-shadow: 
+    0 0 10px #8A6CF5, 
+    0 0 20px #8A6CF5, 
+    0 0 40px rgba(138, 108, 245, 0.5), 
+    0 0 60px rgba(138, 108, 245, 0.3);
+  margin-top: 0 !important;
+  margin-bottom: 15px !important;
+  border-bottom: none !important;
+  animation: neon-pulse 2s infinite alternate;
+}
+
+/* NEON VIBE ANIMATION */
+@keyframes neon-pulse {
+  from {
+    text-shadow:
+      0 0 5px #8A6CF5,
+      0 0 15px #8A6CF5,
+      0 0 30px rgba(138, 108, 245, 0.5);
+  }
+  to {
+    text-shadow:
+      0 0 15px #8A6CF5,
+      0 0 30px #8A6CF5,
+      0 0 60px rgba(138, 108, 245, 0.7);
+  }
+}
+
+/* SECTION MARGINS */
+.dashboard .markdown-preview-section h2,
+.dashboard .markdown-preview-section h3 {
+    margin-top: 0 !important;
+    margin-bottom: 15px !important;
+}
+
+/* LIST MARKS */
+.dashboard div.markdown-preview-section > div > ul > li > .list-bullet {
+    display: none !important;
+}
+
+/* INDENT LINES */
+.dashboard.markdown-rendered.show-indentation-guide li > ul::before,
+.dashboard.markdown-rendered.show-indentation-guide li > ol::before {
+    display: none;
+}
+
+/* LIST PADDING SETTINGS */
+div.markdown-preview-section > div > ul.has-list-bullet > li {
+    padding-left: 0 !important;
+    padding-top: 0px;
+}
+
+/* === ICON GRID SYSTEM === */
+
+.dashboard div > ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+    justify-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.dashboard div > ul > li {
+    width: 100%;
+}
+
+/* FOR DATAVIEW */
+.dashboard ul.dataview {
+    row-gap: 0px !important;
+    list-style-type: disc !important;
+}

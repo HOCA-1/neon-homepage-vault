@@ -1,0 +1,35 @@
+/*
+** Obsidian Mor Gradyanlı HR çizgisi
+*/
+.markdown-source-view hr,
+.markdown-preview-view hr {
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    var(--background-primary),
+    #8A5CF5,
+    #A078F7,
+    #C4A8FA,
+    #A078F7,
+    #8A5CF5,
+    var(--background-primary)
+  );
+  box-shadow: 0 0 8px rgba(138, 92, 245, 0.5);
+}
+
+
+.markdown-source-view hr::before, 
+.markdown-preview-view hr::before {
+  content: '🙤x🙦';
+  color: #8A5CF5;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  transform-origin: 50% 50%;
+  padding: none;
+  background-color: var(--background-primary);
+}

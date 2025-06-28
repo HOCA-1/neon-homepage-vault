@@ -1,0 +1,17 @@
+{
+  "theme": "obsidian",
+  "cssTheme": "Proper Dark",
+  "showViewHeader": false,
+  "showRibbon": true,
+  "enabledCssSnippets": [
+    "Dashboard Clock",
+    "Dashboard Searchbar",
+    "Dahsboard Combobox",
+    "Slider",
+    "Dashboard Glow",
+    "Dashboard++",
+    "Dashboard++ Wide Homepage",
+    "Dashboard Tags",
+    "Dashboard Templates"
+  ]
+}

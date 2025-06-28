@@ -1,0 +1,30 @@
+/* === CLOCK === */
+
+.Clock_Face {
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+    background: transparent;
+    box-shadow: none;
+}
+
+.Clock__time {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 
+        0 0 10px #8A6CF5,
+        0 0 20px #8A6CF5,
+        0 0 40px rgba(138, 108, 245, 0.5),
+        0 0 60px rgba(138, 108, 245, 0.3);
+    position: relative;
+    top: -40px;
+}
+
+.Clock_Date {
+    display: none;
+}
+
+.Clock_Divider {
+    display: none;
+}

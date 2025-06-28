@@ -1,0 +1,21 @@
+{
+  "pluginList": [
+    "noatpad/obsidian-banners"
+  ],
+  "pluginSubListFrozenVersion": [
+    {
+      "repo": "noatpad/obsidian-banners",
+      "version": "2.0.5-beta"
+    }
+  ],
+  "themesList": [],
+  "updateAtStartup": true,
+  "updateThemesAtStartup": true,
+  "enableAfterInstall": true,
+  "loggingEnabled": false,
+  "loggingPath": "BRAT-log",
+  "loggingVerboseEnabled": false,
+  "debuggingMode": false,
+  "notificationsEnabled": true,
+  "personalAccessToken": ""
+}

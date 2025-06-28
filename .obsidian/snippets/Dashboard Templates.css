@@ -1,0 +1,41 @@
+.template-card {
+  background-color: #0d0d0d;
+  border: 2px solid #8A6CF5;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 0 12px #8A6CF5;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.template-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px #8A6CF5;
+}
+
+.template-card h3 {
+  color: #8A6CF5;
+  text-shadow: 0 0 6px #8A6CF5;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.template-card p {
+  color: #ccc;
+  font-size: 0.95em;
+  margin-bottom: 12px;
+}
+
+.template-button {
+  background-color: #8A6CF5;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.template-button:hover {
+  background-color: #a58eff;
+}

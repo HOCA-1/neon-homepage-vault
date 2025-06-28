@@ -1,0 +1,99 @@
+/* === NEON SEARCHBAR === */
+.home-tab-searchbar {
+  position: absolute !important;
+  top: 40px !important;
+  left: 30px !important;
+  width: 240px !important;
+  height: 48px !important;
+  background: #0d0d0d !important;
+  border: 2px solid #8A6CF5 !important;
+  border-radius: 30px !important;
+  box-shadow:
+    0 0 12px rgba(138, 108, 245, 0.7),
+    0 0 24px rgba(138, 108, 245, 0.4) !important;
+  display: flex !important;
+  align-items: center !important;
+  padding-left: 10px !important;
+  box-sizing: border-box !important;
+  z-index: 10000 !important;
+}
+
+.home-tab-searchbar input {
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  color: #FFFFFF !important;
+  font-weight: bold !important;
+  font-size: 14px !important;
+  width: calc(100% - 50px) !important;
+  height: calc(100% - 5px) !important;
+  line-height: 48px !important;
+  padding-right: 20px !important;
+  box-sizing: border-box !important;
+}
+
+.home-tab-searchbar input:focus {
+  box-shadow: none !important;
+}
+
+.home-tab-searchbar .search-icon {
+  position: absolute !important;
+  left: 20px !important;
+  font-size: 18px !important;
+  color: #FFFFFF !important;
+  font-weight: bold !important;
+  pointer-events: none !important;
+}
+
+.home-tab-searchbar.is-active {
+  border-radius: 30px !important;
+}
+
+
+/* === SUGGESTION PANEL === */
+.home-tab-suggestion-container {
+  position: absolute !important;
+  top: 98px !important; /* 40 + 48 + 8 */
+  left: 30px !important;
+  width: 240px !important;
+  background: #0d0d0d !important;
+  border: 2px solid #8A6CF5 !important;
+  border-radius: 30px !important;
+  box-shadow: 0 0 25px rgba(138, 108, 245, 0.6) !important;
+  z-index: 9998 !important;
+  overflow: hidden !important;
+  margin-top: 0 !important;
+  padding-top: 2px !important;
+}
+
+/* Öneri satırları */
+.home-tab-suggestion-container .suggestion {
+  padding: 10px;
+  color: #FFFFFF;
+  font-weight: bold;
+  background: transparent;
+  transition: background 0.3s;
+  border-radius: 8px; /* hover için kenar yumuşatma */
+}
+
+.home-tab-suggestion-container .suggestion:hover {
+  cursor: pointer;
+}
+
+.suggestion.use-accent-color .is-selected {
+  background-color: rgba(138, 108, 245, 0.4) !important;
+  color: #fff !important;
+  border-radius: 10px !important; /* seçili satıra radius */
+}
+
+.home-tab-suggestion-description,
+.home-tab-suggestion-filepath,
+.home-tab-suggestion-tip {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.home-tab-suggestion-title {
+  word-break: break-word;
+  color: #fff;
+}

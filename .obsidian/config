@@ -1,0 +1,169 @@
+{
+  "pluginEnabledStatus": {
+    "File explorer": true,
+    "Search": true,
+    "Quick switcher": true,
+    "Graph view": true,
+    "Backlinks": true,
+    "Word count": true,
+    "Command palette": true,
+    "Markdown format converter": true,
+    "Custom CSS": true,
+    "Zettelkasten prefixer": true,
+    "Daily notes": true,
+    "Page preview": true,
+    "Tag pane": true,
+    "Starred": true,
+    "Random note": true,
+    "Markdown format importer": true
+  },
+  "isSidebarCollapsed": false,
+  "isRightSidedockCollapsed": false,
+  "lastOpenSidebarTab": "File explorer",
+  "lastOpenRightSidedockTab": "Backlinks",
+  "theme": "obsidian",
+  "workspaceLayout": {
+    "id": "1c578b9c5e7d3c05",
+    "type": "split",
+    "dimension": null,
+    "direction": "vertical",
+    "children": [
+      {
+        "id": "d6d9f697ae0d4c30",
+        "type": "leaf",
+        "dimension": null,
+        "active": true,
+        "master": "",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "000 Index.md",
+            "mode": "source"
+          }
+        }
+      }
+    ]
+  },
+  "hotkeys": {
+    "workspace:close": [
+      {
+        "modifiers": [
+          "Mod"
+        ],
+        "key": "w"
+      }
+    ],
+    "workspace:close-others": [
+      {
+        "modifiers": [
+          "Mod",
+          "Shift"
+        ],
+        "key": "w"
+      }
+    ],
+    "app:delete-file": [
+      {
+        "modifiers": [
+          "Mod"
+        ],
+        "key": "Backspace"
+      }
+    ],
+    "workspace:split-horizontal": [
+      {
+        "modifiers": [
+          "Alt"
+        ],
+        "key": "∂"
+      }
+    ],
+    "workspace:split-vertical": [
+      {
+        "modifiers": [
+          "Mod",
+          "Shift"
+        ],
+        "key": "a"
+      }
+    ],
+    "daily-notes": [
+      {
+        "modifiers": [
+          "Ctrl"
+        ],
+        "key": "1"
+      }
+    ],
+    "app:go-back": [
+      {
+        "modifiers": [
+          "Alt"
+        ],
+        "key": "å"
+      },
+      {
+        "modifiers": [
+          "Alt",
+          "Mod"
+        ],
+        "key": "å"
+      }
+    ],
+    "app:go-forward": [
+      {
+        "modifiers": [
+          "Alt",
+          "Mod"
+        ],
+        "key": "ƒ"
+      },
+      {
+        "modifiers": [
+          "Alt"
+        ],
+        "key": "ß"
+      }
+    ],
+    "editor:open-search": [
+      {
+        "modifiers": [
+          "Ctrl"
+        ],
+        "key": "b"
+      }
+    ],
+    "editor:open-search-replace": [
+      {
+        "modifiers": [
+          "Mod"
+        ],
+        "key": "f"
+      }
+    ],
+    "graph:open": [],
+    "switcher:open": [
+      {
+        "modifiers": [
+          "Mod"
+        ],
+        "key": "g"
+      }
+    ]
+  },
+  "sideDockWidth": {
+    "left": 326,
+    "right": 247
+  },
+  "foldHeading": true,
+  "alwaysUpdateLinks": true,
+  "fileSortOrder": "alphabetical",
+  "foldIndent": true,
+  "lastOpenFiles": [
+    "IMF START.md",
+    "Why Categories for Your Note Archive are a Good Idea (IMF).md",
+    "000 Index.md",
+    "__START HERE.md",
+    "2020-05-14 PKM BASM Research.md"
+  ]
+}
