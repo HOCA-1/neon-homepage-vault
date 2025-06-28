@@ -161,6 +161,37 @@ type: clock
 ```
 ````
 
+### `Dashboard Combobox.css`
+
+Styles the **dropdown menu (≡ Menu)** on the homepage, giving it a glowing neon frame and smooth expand/collapse animation.
+
+---
+
+#### ✅ Requirements:
+
+No plugins required.  
+Just make sure the CSS snippet `Dashboard Combobox.css` is enabled from:
+
+> **Settings → Appearance → CSS Snippets**
+
+---
+
+#### 🧩 HTML Usage:
+
+Insert this block into your homepage note to display a vertical dropdown menu:
+
+```html
+<div class="neon-dropdown-fake">
+  <div class="dropdown-header">≡ Menu</div>
+  <div class="dropdown-options">
+    <a href="obsidian://open?vault=Neon-Homepage&file=Neon_Vault%2F000%20Homepage">Homepage</a>
+    <a href="obsidian://open?vault=Neon-Homepage&file=Neon_Vault%2F001%20Templates">Templates</a>
+    <a href="obsidian://open?vault=Neon-Homepage&file=Neon_Vault%2F002%20Main%20Keywords">Main Keywords</a>
+    <a href="obsidian://open?vault=Neon-Homepage&file=Neon_Vault%2F003%20Data%20Center">Data Center</a>
+  </div>
+</div>
+
+
 
 
 
