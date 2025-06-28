@@ -14,6 +14,28 @@ It features:
 
 ---
 
+## 🗂️ Index
+
+- 🧭 Inspirations & Credits
+- ⚙️ Community Plugins
+  - 🖼️ Banners
+  - 🧪 BRAT
+  - 🏠 Homepage
+  - 🗂️ Home Tab
+  - ⏰ Widgets
+- 🎨 CSS Snippets Overview
+- 🧩 How Snippets Are Used
+  - 🔍 Searchbar
+  - 🕒 Clock Widget
+  - 📉 Slider Divider
+  - 🎛️ Combobox Menu
+  - 🏷️ Tag Blocks
+  - 🧮 SVG Icon Layout System
+  - 📄 Template Cards
+- ⚠️ Disclaimer & Notes
+- ☕ Support This Project
+
+---
 
 ## 🧭 Inspirations & Credits
 
@@ -237,6 +259,9 @@ No HTML needed — just use triple dashes `---` in your note and the snippet han
 
 ### SVG Icon Layout System (Dashboard++ Style)
 
+![Adsztasarm1-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/8f349500-db81-4d69-8fbc-e86f5601ec2e)
+
+
 This layout system allows you to arrange glowing SVG icon buttons in flexible rows and columns, using minimal syntax inside your notes.
 
 Powered by the following CSS snippets:
@@ -272,7 +297,7 @@ Enable the 3 CSS snippets from `Settings → Appearance → CSS Snippets`
    ✔️ No plugins required
    ✔️ All layout and effects handled via CSS and Obsidian's HTML support
 
-### ✨ Inline SVG Icons (Direct SVG in HTML)
+#### ✨ Inline SVG Icons (Direct SVG in HTML)
 
 Instead of using external `.svg` image files, you can embed vector icons directly inside your notes using raw `<svg>` markup.  
 This allows for faster load time, precise styling, and full control over how icons behave.
@@ -323,6 +348,180 @@ This allows for faster load time, precise styling, and full control over how ico
 5. Update the `<a href="...">` to point to the desired note
 
 ---
+
+### 🏷️ Dashboard Tags.css
+
+**Author:** C35 Tools (custom edit)  
+**Purpose:** To visually organize keyword-linked notes along with their associated tags in the dashboard.  
+This snippet gives each keyword block a glowing frame, interactive hover effects, and clean, responsive tag layout.
+
+---
+
+#### ✅ What It Does
+
+- Creates a structured visual block for a note link (with icon and title)
+- Shows a list of related tags below
+- Adds neon-style borders, spacing, and hover animations
+- Keeps everything clean and aligned for dashboard display
+
+---
+
+#### 🧩 Required HTML Structure
+
+```html
+<div class="keyword-wrap">
+  <a class="keyword-label" href="obsidian://open?vault=Neon-Homepage&file=Neon_Vault%2F005%20Active%20MOC">
+    <svg class="keyword-icon" ...>
+      <path d="..." />
+    </svg>
+    <span class="keyword-title">Active Notes</span>
+  </a>
+  <div class="keyword-tags">
+    <a class="keyword-tag" href="#">#MOC</a>
+    <a class="keyword-tag" href="#">#maps</a>
+    <a class="keyword-tag" href="#">#TOM</a>
+    <a class="keyword-tag" href="#">#active</a>
+    <a class="keyword-tag" href="#">#unsorted</a>
+    <a class="keyword-tag" href="#">#curate</a>  
+    <a class="keyword-tag" href="#">#tasks</a>
+    <a class="keyword-tag" href="#">#faves</a>
+  </div>
+</div>
+```
+
+---
+
+#### 🖌️ Styling Breakdown
+
+| Class               | Description |
+|---------------------|-------------|
+| `.keyword-wrap`     | Main container with flex layout |
+| `.keyword-label`    | Clickable block with glow, hover scale |
+| `.keyword-icon`     | SVG icon with neon stroke |
+| `.keyword-title`    | Text label for the linked note |
+| `.keyword-tags`     | Container for tags, wraps if too many |
+| `.keyword-tag`      | Tag pill with border, glow on hover |
+
+> 💡 You only need to change the **file path** and optionally the **SVG path** to customize. Layout and behavior are ready.
+
+---
+
+#### ⚙️ Activation
+
+1. Place `Dashboard Tags.css` inside your `.obsidian/snippets/` folder.
+2. Go to **Settings → Appearance → CSS Snippets**
+3. Enable ✅ the `Dashboard Tags.css` snippet.
+
+---
+
+#### 🧪 Tips
+
+- To swap icons, just replace the `<path>` inside the `<svg>` — the glow and size stay intact.
+- Add or remove tags freely within the `.keyword-tags` block.
+- Use this block multiple times across your dashboard for categorized views.
+
+### 📄 Dashboard Templates.css
+
+**Author:** C35 Tools (custom edit)  
+**Purpose:** Styles the **template cards** on the homepage — each showing a different type of note template with "Use" and "Edit" buttons.
+
+---
+
+#### ✅ What It Does
+
+- Creates card-style blocks for templates with title, description, and two buttons  
+- Applies neon-style glowing borders and hover effects  
+- Responsive layout fits naturally in grid-based dashboards  
+- Integrates with [Advanced URI](https://github.com/Vinzent03/obsidian-advanced-uri) and QuickAdd for automation
+
+---
+
+#### 🧩 Required HTML Structure
+
+```html
+<div class="template-card">
+  <h3>🗓️ Daily Planner</h3>
+  <p>Focus of the day, to-do list, and mood check-in.</p>
+  <div class="template-buttons">
+    <a class="template-button use" href="obsidian://advanced-uri?vault=Neon-Homepage&choice=daily-template">Use</a>
+    <a class="template-button edit" href="obsidian://open?vault=Neon-Homepage&file=Neon_Vault%2F_templates%2FDaily%20Planner">Edit</a>
+  </div>
+</div>
+```
+
+---
+
+#### 🖌️ Styling Breakdown
+
+| Class                  | Description |
+|------------------------|-------------|
+| `.template-card`       | Card container with neon border and padding |
+| `.template-buttons`    | Holds both action buttons, spaced horizontally |
+| `.template-button.use` | Main action (glowing, slightly bolder) |
+| `.template-button.edit`| Edit action (lighter style, still interactive) |
+
+---
+
+#### 🧪 Tips
+
+- Duplicate the card block to add multiple templates on your dashboard  
+- Change the `href` of the **Use** button to trigger different QuickAdd or URI commands  
+- The **Edit** button links directly to the note inside your vault’s `Templates` folder  
+- You can use emoji or SVG icons in the `<h3>` for visual consistency
+
+---
+
+#### ⚙️ Activation Steps
+
+1. Add the CSS file `Dashboard Templates.css` to `.obsidian/snippets/`
+2. Open **Obsidian → Settings → Appearance → CSS Snippets**
+3. Enable ✅ the snippet
+
+> 💡 Don’t forget to install and enable **Advanced URI** or **QuickAdd** if your “Use” button links to note creation.
+
+---
+
+#### 📌 Example Templates to Use
+
+| Template Name     | Use Command `choice=`     | File Path in Vault |
+|-------------------|---------------------------|---------------------|
+| Daily Planner     | `daily-template`          | `_templates/Daily Planner` |
+| Meeting Notes     | `meeting-note`            | `_templates/Meeting Notes` |
+| Project Kickoff   | `project-kickoff`         | `_templates/Project Kickoff Note` |
+| Learning Log      | `learning-log`            | `_templates/Learning Log` |
+| Mind Dump         | `mind-dump`               | `_templates/Mind Dump` |
+
+---
+
+---
+
+### ❗ Disclaimer – Fan Project, Personal Use
+
+> ⚠️ **This is a personal fan project.**  
+> It was created for fun, learning, and personal workflow optimization.
+>
+> - The code, CSS snippets, and layout logic shared here **may contain bugs or inconsistencies.**
+> - Not all components are guaranteed to work perfectly in every vault setup or device.
+> - The design choices reflect personal preferences and may not follow best practices or accessibility standards.
+> - **This is not an official plugin or theme.** Use and remix at your own risk and joy 🌈
+>
+> 💬 If you notice something broken or unclear, feel free to fork it, fix it, or just enjoy the chaos!  
+> Everything here was made late at night, with more coffee than testing ☕😅
+
+---
+---
+
+### ☕ Support This Project
+
+If you enjoyed this dashboard or found it useful, consider buying me a coffee!  
+Your support helps fuel late-night CSS experiments and dashboard madness 💜
+
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-%F0%9F%92%95-purple?style=for-the-badge)](https://coff.ee/hoca)
+
+> Thank you for your support and encouragement ✨
+
+---
+
 
 
 
