@@ -109,6 +109,7 @@ Each snippet connects to a specific feature on the homepage. Below is a breakdow
 ---
 
 ### `Dashboard Searchbar.css`
+![image](https://github.com/user-attachments/assets/9aecff77-c986-4558-b6f4-2a1d1086ef3d)
 
 Used to create the floating search input bar at the top of the homepage.
 
@@ -162,6 +163,7 @@ type: clock
 ````
 
 ### `Dashboard Combobox.css`
+![image](https://github.com/user-attachments/assets/c66333e4-6837-443e-82a5-7bb11aba5719)
 
 Styles the **dropdown menu (≡ Menu)** on the homepage, giving it a glowing neon frame and smooth expand/collapse animation.
 
@@ -190,8 +192,137 @@ Insert this block into your homepage note to display a vertical dropdown menu:
     <a href="obsidian://open?vault=Neon-Homepage&file=Neon_Vault%2F003%20Data%20Center">Data Center</a>
   </div>
 </div>
+```
+
+#### 🛠️ How to Customize the Links
+
+To add your own pages to the dropdown menu, edit the HTML snippet like this:
+
+![Resim2](https://github.com/user-attachments/assets/298c01af-8ac2-4ade-9898-c2c808337b67)
 
 
+1️⃣ **Copy the Obsidian File Link**  
+Right-click your target note in Obsidian → Select **“Copy Obsidian URL”**  
+Paste it inside the `href="..."` section.
+
+2️⃣ **Edit the Display Name**  
+Change the visible text between the `<a> ... </a>` tags to whatever you want shown in the menu.
+
+### Dashboard Templates.css  
+Used to visually organize your templates as interactive cards with **Use** and **Edit** buttons.
+
+---
+
+#### 💡 Example HTML Snippet:
+
+```html
+<div class="template-card">
+  <h3>📁 Project Kickoff Note</h3>
+  <p>Includes project name, start date, scope, and initial notes.</p>
+  <div class="template-buttons">
+    <a class="template-button use" href="obsidian://advanced-uri?commandid=quickadd%253Achoice%253Aproject-kickoff">Use</a>
+    <a class="template-button edit" href="obsidian://open?vault=Neon-Homepage&file=Neon_Vault%2F_templates%2FProject%20Kickoff%20Note">Edit</a>
+  </div>
+</div>
+```
+
+### Slider.css
+![image](https://github.com/user-attachments/assets/da3bcfbc-a311-4554-87ae-0b23f6c33b3d)
+
+Refines the appearance of your `---` horizontal lines to match the neon dashboard theme.
+
+No HTML needed — just use triple dashes `---` in your note and the snippet handles the styling.
+
+
+
+### SVG Icon Layout System (Dashboard++ Style)
+
+This layout system allows you to arrange glowing SVG icon buttons in flexible rows and columns, using minimal syntax inside your notes.
+
+Powered by the following CSS snippets:
+- `Dashboard++.css`
+- `Dashboard++ Wide Homepage.css`
+- `Dashboard Glow.css`
+
+---
+
+#### 📐 Layout Rules:
+
+You can organize icons using a combination of:
+- `-` (dash) to place icons side by side
+- `##` (double hash) to force a line break
+- Flexbox-style wrapping and centering handled by CSS
+
+---
+
+#### 🧮 Behavior:
+
+- Icons on the same line will appear side by side with space between them.
+- `##` forces a new row, ideal for grouping.
+- Each icon scales and glows on hover (via `Dashboard Glow.css`).
+
+---
+
+#### ✅ Requirements:
+
+Enable the 3 CSS snippets from `Settings → Appearance → CSS Snippets`  
+   ✔️ `Dashboard++.css`  
+   ✔️ `Dashboard++ Wide Homepage.css`  (Optinal)
+   ✔️ `Dashboard Glow.css`
+   ✔️ No plugins required
+   ✔️ All layout and effects handled via CSS and Obsidian's HTML support
+
+### ✨ Inline SVG Icons (Direct SVG in HTML)
+
+Instead of using external `.svg` image files, you can embed vector icons directly inside your notes using raw `<svg>` markup.  
+This allows for faster load time, precise styling, and full control over how icons behave.
+
+---
+
+#### 💡 Example Snippet:
+
+```html
+<div class="dashboard-panel">
+
+  - <a href="obsidian://open?vault=Neon-Homepage&file=Neon_Vault%2F005%20Active%20MOC">
+    <div class="glow-icon-container">
+      <svg class="glow-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
+        <path d="M14.2495 2H8.49395C8.31447 2 8.22473 2 8.14551 2.02733C8.07544 2.05149 8.01163 2.09093 7.95868 2.14279C7.89881 2.20143 7.85868 2.2817 7.77841 2.44223L3.57841 10.8422C3.38673 11.2256 3.29089 11.4173 3.31391 11.5731C3.33401 11.7091 3.40927 11.8309 3.52197 11.9097C3.65104 12 3.86534 12 4.29395 12H10.4995L7.49953 22L19.6926 9.35531C20.104 8.9287 20.3097 8.7154 20.3217 8.53288C20.3321 8.37446 20.2667 8.22049 20.1454 8.11803C20.0057 8 19.7094 8 19.1167 8H11.9995L14.2495 2Z"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="glow-label">Active Notes</div>
+    </div>
+  </a>
+
+</div>
+```
+
+---
+
+#### 📌 Explanation:
+
+- The icon is embedded directly using `<svg>` and `<path>`.
+- No external image files are needed.
+- The class `glow-icon` adds neon styling via CSS.
+- Wrapped inside a clickable `<a>` link and `glow-icon-container` for hover animation.
+- `dashboard-panel` ensures flex alignment for multiple icons.
+
+---
+
+#### ➕ How to Add New SVG Icons:
+
+1. Go to a site like [https://www.svgrepo.com](https://www.svgrepo.com) or [https://tabler-icons.io](https://tabler-icons.io)
+2. Pick an icon and choose “Copy SVG” (not PNG or URL)
+
+   <img src="https://github.com/user-attachments/assets/54fe6837-8ffb-44ea-b811-d4234e506314" width="400"/>
+   <img src="https://github.com/user-attachments/assets/2a76f358-e8a9-431b-867d-70a024147717" width="400"/>
+   
+3. Paste the SVG code inside your `<div class="glow-icon-container">...</div>`
+✅ Make sure to always include `class="glow-icon"` in your <svg> tag to apply the proper neon styling and hover effects.
+4. Update the `<div class="glow-label">` text as needed
+5. Update the `<a href="...">` to point to the desired note
+
+---
 
 
 
