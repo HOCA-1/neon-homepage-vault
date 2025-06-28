@@ -52,8 +52,8 @@ by **TfTHacker**
 Allows you to install and auto-update plugins that are still in beta (like Banners beta version).  
 Highly recommended for advanced customization.
 > 💡 In this vault, BRAT was used to install the **beta version of the Banners plugin**, which properly fixes the spacing issue between banners and the text content below them.
-![image](https://github.com/user-attachments/assets/82e55b54-aa82-4dce-acec-b09d138e3c76)
 
+<img src="https://github.com/user-attachments/assets/82e55b54-aa82-4dce-acec-b09d138e3c76" width="400"/>
 
 ---
 
@@ -76,23 +76,87 @@ by **Rafael Veiga**
 Adds a collection of small visual widgets (like clocks, weather, quotes) that can be embedded in your notes.  
 Useful for displaying live elements in your dashboard with no custom code.
 
+> 🕒 In this vault, the **clock widget** is styled using a custom CSS snippet for better integration with the neon theme.  
+If you want to apply similar custom styles, enable the corresponding CSS snippet and make sure your homepage HTML includes the widget container.
 
 ---
 
-## 🎨 CSS Snippets
+## 🎨 CSS Snippets Overview
 
-This vault includes modular CSS snippets for maximum flexibility:
+These custom CSS snippets power the entire visual language of the Neon Dashboard.  
+Each one targets a specific UI element and can be enabled/disabled independently in Obsidian.
 
-| Snippet | Description |
-|--------|-------------|
-| `Dashboard Glow.css` | Core glow effect for all components (cards, icons, buttons). |
-| `Dashboard Templates.css` | Styles the visual template cards on the homepage. |
-| `Dashboard Clock.css` | Real-time digital clock widget with neon glow. |
-| `Dashboard Combobox.css` | Custom dropdowns with animated borders and glow. |
-| `Dashboard Searchbar.css` | Floating search bar with placeholder transitions. |
-| `Dashboard Tags.css` | Tag styling for visual emphasis and hover effects. |
-| `Dashboard++.css` | Advanced layout tweaks and improvements. |
-| `Dashboard++ Wide Homepage.css` | Optional wide layout for large displays. |
-| `Slider.css` | Minimal slider styles for theme switchers or toggles. |
+| Snippet Name                 | Purpose                                 |
+|-----------------------------|-----------------------------------------|
+| `Dashboard Glow.css`        | Adds neon glow to icons and elements    |
+| `Dashboard Templates.css`   | Styles the template cards and buttons   |
+| `Dashboard Searchbar.css`   | Creates the floating search input       |
+| `Dashboard Clock.css`       | Styles a glowing digital clock          |
+| `Dashboard Tags.css`        | Custom glowing tag appearance           |
+| `Dashboard Combobox.css`    | Fancy dropdown menu styling             |
+| `Slider.css`                | Visual horizontal divider               |
+| `Dashboard++.css`           | Base layout: padding, spacing, alignment |
+| `Dashboard++ Wide Homepage.css` | Full-width layout for large displays    |
 
 > 🔧 You can mix & match these snippets in `.obsidian/snippets/` and enable them via Settings → Appearance → CSS snippets.
+>
+> ---
+
+## 🧩 How Snippets Are Used
+
+Each snippet connects to a specific feature on the homepage. Below is a breakdown:
+
+---
+
+### `Dashboard Searchbar.css`
+
+Used to create the floating search input bar at the top of the homepage.
+
+
+To add a functional search bar (via Home Tab plugin), insert this code block in your note:
+
+````markdown
+```search-bar
+show started files
+```
+````
+For a visual neon-style search bar, make sure the Dashboard Searchbar.css snippet is enabled from the Appearance → CSS Snippets section.
+
+**Home Tab Plugin Setting for Neon Searchbar:**
+
+<img src="https://github.com/user-attachments/assets/ef6f27c6-1bb3-4f6f-9011-3e1a66e4653e" width="400"/>
+
+### 🕒 `Dashboard Clock.css`
+
+Styles the **clock widget** placed in the top section of your homepage.  
+It adds a glowing digital time display that fits perfectly with the neon dashboard theme.
+
+---
+
+#### ✅ Requirements:
+
+To display the clock, you need to install and enable the community plugin:  
+👉 [`Widgets`](https://github.com/rafaelveiga/obsidian-widgets) by **Rafael Veiga**
+
+Then, enable the CSS snippet:  
+👉 `Dashboard Clock.css` from `Settings → Appearance → CSS Snippets`
+
+---
+
+#### 🧩 HTML Usage:
+
+Place this in your homepage note to render the live clock:
+
+```html
+<div class="widget">
+  <div data-type="clock" data-format="HH:mm"></div>
+</div>
+
+
+
+
+
+
+
+
+
