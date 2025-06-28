@@ -1,3 +1,24 @@
+## 🧭 Inspirations & Credits
+
+This setup was crafted by remixing and building upon existing community wisdom. Huge thanks to the following creators and sources:
+
+- 📚 **Template Logic Inspiration**  
+  [Example Workflows in Obsidian (Forum Post)](https://forum.obsidian.md/t/example-workflows-in-obsidian/1093)
+
+- 🎨 **Homepage Layout & Glow Style Base**  
+  Based on and heavily inspired by [TfTHacker’s Dashboard++](https://github.com/TfTHacker/DashboardPlusPlus/tree/master)
+
+- 🎛️ **Slider Styling**  
+  Adapted from [Fancy Horizontal Rule Lines (Forum)](https://forum.obsidian.md/t/creating-fancy-horizontal-rule-lines/63700)
+
+---
+
+> All CSS snippets were customized, modularized, and integrated into this Vault with dashboard-first design in mind.
+
+
+
+
+
 ## 🎨 CSS Snippets
 
 This vault includes modular CSS snippets for maximum flexibility:
