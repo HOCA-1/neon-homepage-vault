@@ -51,6 +51,9 @@ Great for visual sections like dashboards and MOCs.
 by **TfTHacker**  
 Allows you to install and auto-update plugins that are still in beta (like Banners beta version).  
 Highly recommended for advanced customization.
+> 💡 In this vault, BRAT was used to install the **beta version of the Banners plugin**, which properly fixes the spacing issue between banners and the text content below them.
+![image](https://github.com/user-attachments/assets/82e55b54-aa82-4dce-acec-b09d138e3c76)
+
 
 ---
 
