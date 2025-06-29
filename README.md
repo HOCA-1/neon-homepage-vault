@@ -130,7 +130,7 @@ Each snippet connects to a specific feature on the homepage. Below is a breakdow
 
 ---
 
-### `Dashboard Searchbar.css`
+### 🔍 Dashboard Searchbar
 ![image](https://github.com/user-attachments/assets/9aecff77-c986-4558-b6f4-2a1d1086ef3d)
 
 Used to create the floating search input bar at the top of the homepage.
@@ -157,7 +157,7 @@ For a visual neon-style search bar, make sure the Dashboard Searchbar.css snippe
 
 <img src="https://github.com/user-attachments/assets/ef6f27c6-1bb3-4f6f-9011-3e1a66e4653e" width="400"/>
 
-### `Dashboard Clock.css`
+### 🕒 Dashboard Clock
 
 Styles the **clock widget** placed in the top section of your homepage.  
 It adds a glowing digital time display that fits perfectly with the neon dashboard theme.
@@ -184,7 +184,7 @@ type: clock
 ```
 ````
 
-### `Dashboard Combobox.css`
+### 🎛️ Dashboard Combobox
 ![image](https://github.com/user-attachments/assets/c66333e4-6837-443e-82a5-7bb11aba5719)
 
 Styles the **dropdown menu (≡ Menu)** on the homepage, giving it a glowing neon frame and smooth expand/collapse animation.
@@ -248,7 +248,7 @@ Used to visually organize your templates as interactive cards with **Use** and *
 </div>
 ```
 
-### Slider.css
+### 📉 Slider
 ![image](https://github.com/user-attachments/assets/da3bcfbc-a311-4554-87ae-0b23f6c33b3d)
 
 Refines the appearance of your `---` horizontal lines to match the neon dashboard theme.
@@ -257,7 +257,7 @@ No HTML needed — just use triple dashes `---` in your note and the snippet han
 
 
 
-### SVG Icon Layout System (Dashboard++ Style)
+### 🧮 SVG Icon Layout System (Dashboard++ Style)
 
 ![Adsztasarm1-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/8f349500-db81-4d69-8fbc-e86f5601ec2e)
 
@@ -292,7 +292,7 @@ You can organize icons using a combination of:
 
 Enable the 3 CSS snippets from `Settings → Appearance → CSS Snippets`  
    ✔️ `Dashboard++.css`  
-   ✔️ `Dashboard++ Wide Homepage.css`  (Optinal)
+   ✔️ `Dashboard++ Wide Homepage.css` 
    ✔️ `Dashboard Glow.css`
    ✔️ No plugins required
    ✔️ All layout and effects handled via CSS and Obsidian's HTML support
@@ -349,10 +349,11 @@ This allows for faster load time, precise styling, and full control over how ico
 
 ---
 
-### 🏷️ Dashboard Tags.css
+### 🏷️ Dashboard Tags
 
-**Author:** C35 Tools (custom edit)  
-**Purpose:** To visually organize keyword-linked notes along with their associated tags in the dashboard.  
+![2025-06-2902-39-35-ezgif com-crop](https://github.com/user-attachments/assets/ebe2d21a-41a1-458f-a533-839092c4bec2)
+
+To visually organize keyword-linked notes along with their associated tags in the dashboard.  
 This snippet gives each keyword block a glowing frame, interactive hover effects, and clean, responsive tag layout.
 
 ---
@@ -422,8 +423,8 @@ This snippet gives each keyword block a glowing frame, interactive hover effects
 
 ### 📄 Dashboard Templates.css
 
-**Author:** C35 Tools (custom edit)  
-**Purpose:** Styles the **template cards** on the homepage — each showing a different type of note template with "Use" and "Edit" buttons.
+
+Styles the **template cards** on the homepage — each showing a different type of note template with "Use" and "Edit" buttons.
 
 ---
 
@@ -479,19 +480,6 @@ This snippet gives each keyword block a glowing frame, interactive hover effects
 
 > 💡 Don’t forget to install and enable **Advanced URI** or **QuickAdd** if your “Use” button links to note creation.
 
----
-
-#### 📌 Example Templates to Use
-
-| Template Name     | Use Command `choice=`     | File Path in Vault |
-|-------------------|---------------------------|---------------------|
-| Daily Planner     | `daily-template`          | `_templates/Daily Planner` |
-| Meeting Notes     | `meeting-note`            | `_templates/Meeting Notes` |
-| Project Kickoff   | `project-kickoff`         | `_templates/Project Kickoff Note` |
-| Learning Log      | `learning-log`            | `_templates/Learning Log` |
-| Mind Dump         | `mind-dump`               | `_templates/Mind Dump` |
-
----
 
 ---
 
