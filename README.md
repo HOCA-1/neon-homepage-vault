@@ -421,7 +421,7 @@ This snippet gives each keyword block a glowing frame, interactive hover effects
 - Add or remove tags freely within the `.keyword-tags` block.
 - Use this block multiple times across your dashboard for categorized views.
 
-### 📄 Dashboard Templates.css
+### 📄 Dashboard Templates
 
 
 Styles the **template cards** on the homepage — each showing a different type of note template with "Use" and "Edit" buttons.
