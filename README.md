@@ -291,10 +291,14 @@ You can organize icons using a combination of:
 #### ✅ Requirements:
 
 Enable the 3 CSS snippets from `Settings → Appearance → CSS Snippets`  
-   ✔️ `Dashboard++.css`  
-   ✔️ `Dashboard++ Wide Homepage.css` 
+   ✔️ `Dashboard++.css`
+   
+   ✔️ `Dashboard++ Wide Homepage.css`
+   
    ✔️ `Dashboard Glow.css`
+   
    ✔️ No plugins required
+   
    ✔️ All layout and effects handled via CSS and Obsidian's HTML support
 
 #### ✨ Inline SVG Icons (Direct SVG in HTML)
@@ -422,6 +426,8 @@ This snippet gives each keyword block a glowing frame, interactive hover effects
 - Use this block multiple times across your dashboard for categorized views.
 
 ### 📄 Dashboard Templates
+
+![2025-06-2902-45-50-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/7a67a509-15c3-4b4f-8734-72e16b9d12fa)
 
 
 Styles the **template cards** on the homepage — each showing a different type of note template with "Use" and "Edit" buttons.
